@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="BridgePoint Digital connects businesses with trusted independent digital marketing professionals.">
+  <meta name="theme-color" content="#101d35">
+  <title>BridgePoint Digital | Connecting Businesses. Creating Opportunities.</title>
+  <style>
+    :root{--navy:#101d35;--navy2:#172b4d;--gold:#d7b56d;--ink:#182238;--muted:#64748b;--paper:#f7f8fb;--white:#fff;--line:#e5e9f0}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:var(--white);line-height:1.6}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1120px,calc(100% - 40px));margin:auto}
+    .topbar{background:var(--navy);color:#dce4f0;font-size:13px;padding:9px 0}.topbar .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+    header{position:sticky;top:0;z-index:20;background:#ffffffed;backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+    .nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:11px;font-weight:850;letter-spacing:.08em;color:var(--navy);line-height:1.05}
+    .brandmark{width:42px;height:42px;border-radius:12px;background:var(--navy);color:var(--gold);display:grid;place-items:center;font-family:Georgia,serif;font-size:25px;border:1px solid #293c5b}
+    .brand small{display:block;color:#a7833d;font-size:10px;letter-spacing:.28em;margin-top:5px}.links{display:flex;gap:25px;align-items:center;font-size:14px;color:#475569}.links a:hover{color:#a7833d}
+    .btn{display:inline-flex;align-items:center;justify-content:center;border:0;border-radius:9px;padding:13px 19px;background:var(--gold);color:var(--navy);font-weight:750;font-size:14px;cursor:pointer;transition:.2s}.btn:hover{transform:translateY(-2px);filter:brightness(.97)}
+    .btn.outline{background:transparent;border:1px solid #ffffff80;color:#fff}.btn.dark{background:var(--navy);color:#fff}.btn.light{background:#fff;color:var(--navy)}
+    .hero{background:radial-gradient(circle at 82% 20%,#28436b 0,transparent 33%),linear-gradient(125deg,#0c172b,#142746 70%,#1b3153);color:#fff;padding:100px 0 92px;overflow:hidden}
+    .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:55px;align-items:center}.eyebrow{display:inline-flex;gap:9px;align-items:center;color:var(--gold);font-size:12px;font-weight:800;letter-spacing:.16em;text-transform:uppercase}.eyebrow:before{content:"";width:24px;height:1px;background:var(--gold)}
+    h1{font-size:clamp(42px,6vw,68px);line-height:1.04;letter-spacing:-.045em;margin:20px 0}.gold{color:var(--gold)}.hero p{font-size:18px;color:#d7e0ed;max-width:600px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+    .hero-card{border:1px solid #ffffff30;background:#ffffff0d;border-radius:20px;padding:27px;box-shadow:0 25px 70px #0003}.hero-card h3{margin:0 0 16px;font-size:17px}.steps{display:grid;gap:15px}.step{display:flex;gap:13px;align-items:flex-start}.num{width:30px;height:30px;border-radius:9px;background:#d7b56d20;color:var(--gold);display:grid;place-items:center;font-weight:800;flex:none}.step strong{display:block;font-size:14px}.step span{display:block;color:#bdc9d9;font-size:12px}
+    .trust{padding:22px 0;border-bottom:1px solid var(--line);background:#fbfcfe}.trust-row{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;color:#64748b;font-size:13px}.trust strong{color:var(--navy)}
+    section{padding:82px 0}.section-head{text-align:center;max-width:700px;margin:0 auto 42px}.kicker{color:#a7833d;text-transform:uppercase;letter-spacing:.16em;font-weight:800;font-size:11px}.section-head h2{font-size:clamp(30px,4vw,43px);letter-spacing:-.035em;line-height:1.15;margin:12px 0}.section-head p{color:var(--muted);margin:0}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.service{padding:25px;border:1px solid var(--line);border-radius:15px;background:#fff;transition:.2s}.service:hover{transform:translateY(-4px);box-shadow:0 15px 35px #172b4d0d;border-color:#d8c18e}.icon{width:43px;height:43px;border-radius:12px;background:#f7f1e5;color:#98732d;display:grid;place-items:center;font-size:21px}.service h3{margin:17px 0 7px;font-size:17px}.service p{margin:0;color:var(--muted);font-size:13px}.tag{display:inline-block;margin-top:15px;font-size:11px;color:#8a6a2e;background:#fbf7ed;padding:5px 9px;border-radius:99px}
+    .soft{background:var(--paper)}.how-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.how{background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px}.how b{font-size:12px;color:#a7833d;letter-spacing:.1em}.how h3{font-size:16px;margin:9px 0 5px}.how p{font-size:13px;color:var(--muted);margin:0}
+    .split{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}.panel{background:var(--navy);color:#fff;border-radius:20px;padding:34px}.panel h3{font-size:25px;line-height:1.2;margin:0 0 12px}.panel p{color:#cbd5e1}.check{display:flex;gap:10px;margin:13px 0;color:#e2e8f0;font-size:14px}.check i{color:var(--gold);font-style:normal;font-weight:900}
+    .audience{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.aud{border:1px solid var(--line);border-radius:12px;padding:16px;background:#fff}.aud strong{display:block;font-size:14px}.aud span{font-size:12px;color:var(--muted)}
+    .notice{border-left:3px solid var(--gold);background:#fbf8f0;padding:14px 17px;border-radius:0 9px 9px 0;color:#6b5a36;font-size:13px;margin-top:22px}
+    .contact{background:linear-gradient(120deg,#101d35,#1b3153);color:#fff}.contact .section-head p{color:#cbd5e1}.contact-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:40px;align-items:start}.contact-info h3{font-size:24px;margin:0 0 12px}.contact-info p{color:#cbd5e1;font-size:14px}.contact-card{background:#fff;color:var(--ink);padding:27px;border-radius:16px}.field{margin-bottom:14px}.field label{display:block;font-size:12px;font-weight:750;margin-bottom:6px}.field input,.field select,.field textarea{width:100%;padding:12px;border:1px solid #dce2ea;border-radius:8px;font:inherit;font-size:14px;background:#fff}.field textarea{min-height:100px;resize:vertical}.contact-card small{display:block;color:var(--muted);font-size:11px;margin-top:10px}
+    footer{background:#0b1425;color:#b8c3d3;padding:30px 0;font-size:12px}.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.foot strong{color:#fff}.mobile-menu{display:none}
+    @media(max-width:800px){.links{display:none}.hero{padding:72px 0}.hero-grid,.split,.contact-grid{grid-template-columns:1fr}.hero-card{max-width:540px}.grid{grid-template-columns:repeat(2,1fr)}.how-grid{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:540px){.wrap{width:min(100% - 30px,1120px)}.nav{height:67px}.nav>.btn{padding:10px 12px;font-size:12px}.hero{padding:60px 0}.hero p{font-size:16px}section{padding:62px 0}.grid,.how-grid,.audience{grid-template-columns:1fr}.contact-card{padding:20px}}
+  </style>
+</head>
+<body>
+  <div class="topbar"><div class="wrap"><span>Independent digital talent. Business-ready connections.</span><span>Serving businesses in Nigeria &amp; worldwide</span></div></div>
+  <header><div class="wrap nav">
+    <a class="brand" href="#home"><span class="brandmark">B</span><span>BRIDGEPOINT<small>DIGITAL</small></span></a>
+    <nav class="links"><a href="#services">Services</a><a href="#process">How it works</a><a href="#businesses">For businesses</a><a href="#partners">For professionals</a></nav>
+    <a class="btn" href="#contact">Start an enquiry</a>
+  </div></header>
+  <main>
+    <section class="hero" id="home"><div class="wrap hero-grid">
+      <div><span class="eyebrow">Digital connections, made simpler</span>
+        <h1>Connecting businesses.<br><span class="gold">Creating opportunities.</span></h1>
+        <p>BridgePoint Digital helps businesses connect with independent digital professionals for marketing, creative and online growth services.</p>
+        <div class="actions"><a class="btn" href="#contact">Tell us what you need</a><a class="btn outline" href="#partners">Become a service partner</a></div>
+      </div>
+      <div class="hero-card"><h3>A straightforward way to find the right support</h3><div class="steps">
+        <div class="step"><div class="num">01</div><div><strong>Tell us your goal</strong><span>Share the business challenge or service you need.</span></div></div>
+        <div class="step"><div class="num">02</div><div><strong>Get connected</strong><span>We look for a suitable independent professional.</span></div></div>
+        <div class="step"><div class="num">03</div><div><strong>Agree directly</strong><span>You review the provider, scope, price and timeline.</span></div></div>
+        <div class="step"><div class="num">04</div><div><strong>Move forward</strong><span>The provider delivers under the terms you agree together.</span></div></div>
+      </div></div>
+    </div></section>
+    <div class="trust"><div class="wrap trust-row"><span><strong>Clear introductions</strong> — no inflated promises</span><span><strong>Independent specialists</strong> — matched to your needs</span><span><strong>Transparent process</strong> — agree scope and price first</span></div></div>
+    <section id="services"><div class="wrap"><div class="section-head"><span class="kicker">What we connect you with</span><h2>Digital services for your next stage of growth</h2><p>We introduce businesses to independent professionals whose skills fit the project. Availability and suitability are confirmed before any introduction.</p></div>
+      <div class="grid">
+        <article class="service"><div class="icon">◎</div><h3>Social media marketing</h3><p>Social media planning, content calendars, page management and audience engagement.</p><span class="tag">Content &amp; community</span></article>
+        <article class="service"><div class="icon">✳</div><h3>Graphic design &amp; branding</h3><p>Brand identity, promotional graphics, flyers and visual content for campaigns.</p><span class="tag">Creative services</span></article>
+        <article class="service"><div class="icon">⌘</div><h3>Website &amp; e-commerce</h3><p>Business websites, landing pages, online stores and website improvements.</p><span class="tag">Web presence</span></article>
+        <article class="service"><div class="icon">↗</div><h3>Digital advertising</h3><p>Campaign planning and management for suitable search and social advertising channels.</p><span class="tag">Paid campaigns</span></article>
+        <article class="service"><div class="icon">✦</div><h3>AI-assisted marketing</h3><p>Content workflows, marketing research, repurposing and practical automation support.</p><span class="tag">AI &amp; workflows</span></article>
+        <article class="service"><div class="icon">▶</div><h3>Video &amp; content production</h3><p>Short-form video editing, promotional videos and content production support.</p><span class="tag">Video &amp; storytelling</span></article>
+        <article class="service"><div class="icon">⌕</div><h3>SEO &amp; search visibility</h3><p>Keyword research, on-page optimisation and local search visibility support.</p><span class="tag">Organic discovery</span></article>
+        <article class="service"><div class="icon">✉</div><h3>Email &amp; customer journeys</h3><p>Email campaign setup, newsletter design and customer communication workflows.</p><span class="tag">Customer engagement</span></article>
+        <article class="service"><div class="icon">▤</div><h3>Marketing strategy</h3><p>Audience research, campaign planning and practical digital growth recommendations.</p><span class="tag">Planning &amp; insights</span></article>
+      </div>
+    </div></section>
+    <section class="soft" id="process"><div class="wrap"><div class="section-head"><span class="kicker">A clear process</span><h2>From enquiry to the right introduction</h2><p>We help make the connection. The client and independent provider review and approve the work arrangement before it begins.</p></div>
+      <div class="how-grid">
+        <div class="how"><b>STEP 01</b><h3>Share your brief</h3><p>Tell us about your business, goals, budget range and timeline.</p></div>
+        <div class="how"><b>STEP 02</b><h3>Review the match</h3><p>We identify a potentially suitable professional and check availability.</p></div>
+        <div class="how"><b>STEP 03</b><h3>Agree the details</h3><p>You discuss deliverables, price, payment, ownership and revisions directly.</p></div>
+        <div class="how"><b>STEP 04</b><h3>Start with clarity</h3><p>Work begins only after both sides accept written terms.</p></div>
+      </div>
+    </div></section>
+    <section id="businesses"><div class="wrap split">
+      <div><span class="kicker">For businesses</span><h2 style="font-size:38px;line-height:1.15">Find digital support without searching alone.</h2><p style="color:var(--muted)">Whether you're launching a new brand or improving your online presence, tell us what you need. We'll work to identify an independent professional whose experience and availability may fit.</p>
+        <div class="check"><i>✓</i><span>One enquiry for a range of digital needs</span></div><div class="check"><i>✓</i><span>Introductions based on project requirements</span></div><div class="check"><i>✓</i><span>Clear expectations before work begins</span></div><a class="btn dark" href="#contact">Make a business enquiry</a>
+      </div>
+      <div class="audience"><div class="aud"><strong>Small businesses</strong><span>Build a consistent online presence.</span></div><div class="aud"><strong>Startups</strong><span>Get creative and web support.</span></div><div class="aud"><strong>Retail &amp; e-commerce</strong><span>Promote products and reach customers.</span></div><div class="aud"><strong>Service businesses</strong><span>Present your offer professionally.</span></div></div>
+    </div></section>
+    <section class="soft" id="partners"><div class="wrap split">
+      <div class="panel"><span class="eyebrow">For independent professionals</span><h3>Good work deserves good opportunities.</h3><p>We are building a network of independent digital professionals across creative, marketing and technology services.</p><div class="check"><i>✓</i><span>Share your portfolio and specialisms</span></div><div class="check"><i>✓</i><span>Be considered for relevant client enquiries</span></div><div class="check"><i>✓</i><span>Discuss referral terms transparently before introductions</span></div></div>
+      <div><span class="kicker">Become a partner</span><h2 style="font-size:36px;line-height:1.15">Join the BridgePoint professional network.</h2><p style="color:var(--muted)">We welcome independent marketers, designers, editors, developers and other digital specialists. Partner acceptance depends on portfolio review, availability and clear working terms.</p><a class="btn dark" href="#contact">Register your interest</a></div>
+    </div></section>
+    <section class="contact" id="contact"><div class="wrap"><div class="section-head"><span class="kicker">Let's start a conversation</span><h2>Tell us what you're looking for.</h2><p>Use this enquiry form to prepare a message for BridgePoint Digital.</p></div>
+      <div class="contact-grid"><div class="contact-info"><h3>Make the right connection.</h3><p>Tell us whether you're a business looking for digital support or a professional interested in joining our network.</p><p><strong>Location:</strong> Nigeria · Serving international enquiries</p><div class="notice">BridgePoint Digital is a referral and introduction service. Service delivery, pricing and project terms are agreed between the client and the independent provider.</div></div>
+        <form class="contact-card" id="enquiry">
+          <div class="field"><label for="kind">I am a...</label><select id="kind" required><option value="Business seeking digital services">Business seeking digital services</option><option value="Digital professional interested in partnering">Digital professional interested in partnering</option></select></div>
+          <div class="field"><label for="name">Your name</label><input id="name" required placeholder="Your name"></div>
+          <div class="field"><label for="email">Email address</label><input id="email" type="email" required placeholder="you@example.com"></div>
+          <div class="field"><label for="service">Service / skill area</label><select id="service"><option>Social media marketing</option><option>Graphic design & branding</option><option>Website & e-commerce</option><option>Digital advertising</option><option>AI-assisted marketing</option><option>Video & content production</option><option>SEO</option><option>Email marketing</option><option>Other</option></select></div>
+          <div class="field"><label for="details">Tell us a little more</label><textarea id="details" placeholder="Your goals, project needs, portfolio link or availability..."></textarea></div>
+          <button class="btn dark" type="submit" style="width:100%">Prepare enquiry email</button>
+          <small>This demo form opens your email app. Before publishing, replace the placeholder business email in the website file with an email address you control. Do not submit confidential information.</small>
+        </form>
+      </div>
+    </div></section>
+  </main>
+  <footer><div class="wrap foot"><div><strong>BRIDGEPOINT DIGITAL</strong><br>Connecting Businesses. Creating Opportunities.</div><div>© <span id="year"></span> BridgePoint Digital. Independent referral &amp; introduction service.</div></div></footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById('enquiry').addEventListener('submit', function(e){
+      e.preventDefault();
+      const v=id=>document.getElementById(id).value.trim();
+      const subject=encodeURIComponent('BridgePoint Digital enquiry — '+v('kind'));
+      const body=encodeURIComponent('Name: '+v('name')+'\nEmail: '+v('email')+'\nEnquiry type: '+v('kind')+'\nService/skill: '+v('service')+'\nDetails: '+v('details')+'\n\nSent from the BridgePoint Digital website.');
+      // Replace this placeholder with a real, monitored business email before publishing.
+      window.location.href='mailto:YOUR_BUSINESS_EMAIL@example.com?subject='+subject+'&body='+body;
+    });
+  </script>
+</body>
+</html>
